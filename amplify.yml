@@ -3,8 +3,8 @@ backend:
   phases:
     preBuild:
       commands:
-        - nvm install 16 # or another version that supports your application
-        - nvm use 16
+        - nvm install 18 # or another version that supports your application
+        - nvm use 18
     build:
       commands:
         - npm ci --cache .npm --prefer-offline
@@ -13,8 +13,8 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm install 16 # Ensures that the frontend uses the same version
-        - nvm use 16
+        - nvm install 18 # Ensures that the frontend uses the same version
+        - nvm use 18
     build:
       commands:
         - npm install -g @angular/cli
